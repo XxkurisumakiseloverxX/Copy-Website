@@ -1,0 +1,73 @@
+body {
+    background-color: rgba(28, 69, 145, 1);
+    color: white;
+}
+h2 {
+    text-decoration: underline;
+}
+a:any-link {
+    text-decoration: underline;
+    color: white;
+}
+
+.sidebar {
+
+}
+
+#sidebarbutton {
+    z-index: 100 !important;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.carousel {
+    display: inline;
+    button {
+        display: inline;
+        text-decoration: none;
+        background-color: gold;
+        color: rgba(28, 69, 145, 1);
+    }
+    img {
+        height: 30vh;
+        width: 50vw;
+    }
+}
+
+.aplinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
+    img {
+        height: 2vw;
+        margin-left: 70vw;
+    }
+}
+
+.clubimg {
+    display: flex;
+    height: 20vh;
+    width: 20vw;
+    gap: 5px;
+}
+.clubtxt {
+    text-decoration: none;
+}
+
+.collegewrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto auto;
+    gap: 12px;
+    align-content: center;
+    .college {
+        align-content: center;
+        img {
+            height: 7vh;
+            width: 5vw;
+            margin-left: 20px;
+        }
+    }
+}
