@@ -4,25 +4,64 @@ body {
 }
 h2 {
     text-decoration: underline;
+    font-size: 30px;
 }
 a:any-link {
     text-decoration: underline;
     color: white;
 }
 
-.sidebar {
+#home {
+    font-size: 50px;
+}
+p {
+    font-size: 20px;
+}
 
+#sidebar {
+    display: none;
+    background-color: gold;
+    color:black;
+}
+#sidebar a:hover {
+    background-color: white;
+    padding: 40px;
+}
+#sidebar a {
+    color: black;
+    padding: 20px;
+}
+#sidebar h3 {
+    margin-top: 3vw;
 }
 
 #sidebarbutton {
-    z-index: 100 !important;
     background-color: transparent;
     border: 1px solid white;
     color: white;
+    font-size: 30px;
+    position: fixed;
+    opacity: 60%;
+}
+#sidebarbuttonbar {
+    background-color: transparent;
+    border: 1px solid black;
+    color: black;
+    font-size: 30px;
+    position: fixed;
+    opacity: 60%;
+}
+
+#sidebarhiddencourses {
+    display: none;
+}
+#sidebarhiddenextra {
+    display: none;
 }
 
 .carousel {
-    display: inline;
+    display: flex;
+    justify-content: center;
     button {
         display: inline;
         text-decoration: none;
@@ -42,7 +81,7 @@ a:any-link {
     gap: 10px;
     img {
         height: 2vw;
-        margin-left: 70vw;
+        margin-left: 60vw;
     }
 }
 
@@ -63,7 +102,6 @@ a:any-link {
     gap: 12px;
     align-content: center;
     .college {
-        align-content: center;
         img {
             height: 7vh;
             width: 5vw;

@@ -7,11 +7,29 @@
     <title>FHS Computer Science Program</title>
 </head>
 <body>
-    <div class="sidebar">
-        <button id="sidebarbutton">≣</button>
-
+    <button id="sidebarbutton" onClick="togglebar()">≣</button>
+    <div id="sidebar">
+        <button id="sidebarbuttonbar" onClick="togglebar()">≣</button>
+        <h3>Computer Science Magnet Program</h3>
+        <h4>Freehold High School</h4>
+        <h6><a href="#courses" onClick="toggleCourses()">Courses In the Program</a></h6>
+        <div id="sidebarhiddencourses">
+            <a href="#APCSP">AP Computer Science Principals</a>
+            <a href="#APCSA">AP Computer Science A</a>
+            <a href="#HDSAA">Honors Data Structures and Algorithms</a>
+            <a href="#WDAI">Honors Computer Science Senior Capstone: Web, Data, and AI</a>
+            <a href="#DMAC">Honors Discrete Math and Cybersecurity</a>
+        </div>
+        <h6><a href="#extracurriculars" onClick="toggleExtra()">Extracurricular Opportunities</a></h6>
+        <div id="sidebarhiddenextra">
+            <a href="#robotics">Robotics</a>
+            <a href="#cyber">Cybersecurity</a>
+            <a href="#CSL">Computer Science League</a>
+            <a href="#CIMA">Computing Inspiration & Mentorship Association</a>
+        </div>
+        <h6><a href="#colleges">Where Our Students Have Gone</a></h6>
     </div>
-
+    <div id="mainbody">
     <h1 id="home">Computer Science Magnet Program</h1>
     <p>
         The Computer Science Magnet Program is a rigorous four-year course of study designed for students who have an interest in computer science, technology, engineering, data, cybersecurity, and emerging fields such as artificial intelligence. The program provides students with the opportunity to develop a strong foundation in computer science while applying computational thinking, programming, mathematics, and problem-solving skills to authentic and increasingly complex challenges.
@@ -180,5 +198,6 @@
         <p>Yale University</p>
     </div>
 </div>
+    </div>
 </body>
 </html>
