@@ -5,6 +5,7 @@ let i = 0;
 first = true;
 let bar = false;
 let courses = false;
+let extra = false;
 
 function next() {
     if (first) {
@@ -38,11 +39,13 @@ function prev() {
 function togglebar() {
     if (bar) {
         document.getElementById("sidebar").style.display = "none";
+        document.getElementById("mainbody").style.marginLeft = "0vw";
         bar = false;
         return 1;
     }
-    document.getElementById("sidebar").style.display = "block";
+    document.getElementById("sidebar").style.display = "inline-block";
     document.getElementById("sidebar").style.position = "fixed";
+    document.getElementById("mainbody").style.marginLeft = "21vw";
     bar = true;
     return 1;
 } //toggles sidebar
@@ -53,18 +56,26 @@ function toggleCourses() {
         courses = false;
         return 1;
     }
-    document.getElementById("sidebarhiddencourses").style.display = "block";
+    document.getElementById("sidebarhiddencourses").style.display = "grid";
     courses = true;
+    if (extra) {
+        extra = true;
+        toggleExtra();
+    }
     return 1;
 }
 
 function toggleExtra() {
-    if (courses) {
+    if (extra) {
         document.getElementById("sidebarhiddenextra").style.display = "none";
-        courses = false;
+        extra = false;
         return 1;
     }
-    document.getElementById("sidebarhiddenextra").style.display = "block";
-    courses = true;
+    document.getElementById("sidebarhiddenextra").style.display = "grid";
+    extra = true;
+    if (courses) {
+        courses = true;
+        toggleCourses();
+    }
     return 1;
 }
